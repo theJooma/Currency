@@ -17,7 +17,7 @@ class CryptoViewModel{
     
     func requestData(){
         self.loading.onNext(true)
-        let url = URL(string: "https://raw.githubusercontent.com/atilsamancioglu/K21-JSONDataSet/master/crypto.json")!
+        let url = URL(string: "placeholder-API")!
         Webservice().downloadCurrencies(url: url) { result in
             self.loading.onNext(false)
             switch result {
